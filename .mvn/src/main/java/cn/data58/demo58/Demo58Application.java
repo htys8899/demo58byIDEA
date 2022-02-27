@@ -21,8 +21,9 @@ public class Demo58Application {
 
         t.parseMethod(SayHello126.class);
 
-        System.out.println("226 16:20 888 run by IDEA in ZhuoEr+ parseMethod");
+        System.out.println("227 github push far test 11:18  run by IDEA in ZhuoEr+ parseMethod");
     }
+
 
 
     public void parseMethod(Class<?> clazz) {
