@@ -21,7 +21,7 @@ public class Demo58Application {
 
         t.parseMethod(SayHello126.class);
 
-        System.out.println("227 github push far test 11:18  run by IDEA in ZhuoEr+ parseMethod");
+        System.out.println("227 github push far test 11:18/23:40  run by IDEA in ZhuoEr+ parseMethod");
     }
 
 
