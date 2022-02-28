@@ -21,7 +21,7 @@ public class Demo58Application {
 
         t.parseMethod(SayHello126.class);
 
-        System.out.println("227 github push far test 11:18/23:40  run by IDEA in ZhuoEr+ parseMethod");
+        System.out.println("227 github push far test 11:18/23:40/0:30  run by IDEA in ZhuoEr+ parseMethod");
     }
 
 
@@ -49,7 +49,7 @@ public class Demo58Application {
     @RequestMapping(value = "/h20")
     public String Demo58Controller11() {
         return "Hello World! hyh 222";
-        // localhost:8080/h20  ; firefox 只能取到return的 String结果
+        // localhost:8080/h20  ; 228 add, test firefox 只能取到return的 String结果
     }
 
 
