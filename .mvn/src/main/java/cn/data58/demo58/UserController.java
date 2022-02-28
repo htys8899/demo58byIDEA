@@ -18,7 +18,7 @@ public class UserController {
         users.add(new User66("光头强228-2", "男", "砍树"));
         users.add(new User66("佩奇228-5", "男", "叫"));
         model.addAttribute("users",users);
-        return "user";
+        return "user66";
     }
 }
 
