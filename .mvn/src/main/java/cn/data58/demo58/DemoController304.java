@@ -5,14 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class DemoController {
+public class DemoController304 {
 
     @Autowired
-    private CustomerRepository customerRepository;
+    private CustomerRepository304 customerRepository;
 
     @PostMapping("/add")
     public String addCustomer(@RequestParam String first, @RequestParam String last) {
-        Customer customer = new Customer();
+        Customer304 customer = new Customer304();
         customer.setFirstName(first);
         customer.setLastName(last);
         customerRepository.save(customer);
@@ -20,12 +20,12 @@ public class DemoController {
     }
 
     @GetMapping("/list")
-    public Iterable<Customer> getCustomers() {
+    public Iterable<Customer304> getCustomers() {
         return customerRepository.findAll();
     }
 
     @GetMapping("/find/{id}")
-    public Customer findCustomerById(@PathVariable Integer id) {
+    public Customer304 findCustomerById(@PathVariable Integer id) {
         return customerRepository.findCustomerById(id);
     }
 }

@@ -9,14 +9,14 @@ import java.util.List;
 
 //@SpringBootApplication
 @Controller
-public class UserController {
+public class UserController66 {
 
     @RequestMapping(value="/user88")
     public String index(Model model) {
         List<User66> users = new ArrayList<User66>();
         users.add(new User66("皮皮虾228-1", "男", "喜欢皮"));
         users.add(new User66("光头强228-2", "男", "砍树"));
-        users.add(new User66("佩奇228-5", "男", "叫"));
+        users.add(new User66("佩奇304-1", "男", "叫"));
         model.addAttribute("users",users);
         return "user66";
     }
