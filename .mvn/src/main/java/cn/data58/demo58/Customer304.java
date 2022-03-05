@@ -14,6 +14,8 @@ public class Customer304 {
 
     private String firstName;
     private String lastName;
+    private String address;
+    private String hobby;
 
     public Integer getId() {
         return id;
@@ -37,5 +39,21 @@ public class Customer304 {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getHobby() {
+        return hobby;
+    }
+
+    public void setHobby(String hobby) {
+        this.hobby = hobby;
     }
 }

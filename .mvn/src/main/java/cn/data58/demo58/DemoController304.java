@@ -11,10 +11,12 @@ public class DemoController304 {
     private CustomerRepository304 customerRepository;
 
     @PostMapping("/add")
-    public String addCustomer(@RequestParam String first, @RequestParam String last) {
+    public String addCustomer(@RequestParam String first, @RequestParam String last, @RequestParam String addr,@RequestParam String hob) {
         Customer304 customer = new Customer304();
         customer.setFirstName(first);
         customer.setLastName(last);
+        customer.setAddress(addr);
+        customer.setHobby(hob);
         customerRepository.save(customer);
         return "Added new customer to repo!";
     }
