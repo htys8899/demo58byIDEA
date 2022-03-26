@@ -56,4 +56,11 @@ public class Customer304 {
     public void setHobby(String hobby) {
         this.hobby = hobby;
     }
+
+    @Override
+    public String toString() {
+        return "Customer304{" +
+                "id=" + id +
+                '}';
+    }
 }

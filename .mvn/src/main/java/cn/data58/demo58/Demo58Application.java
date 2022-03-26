@@ -48,7 +48,7 @@ public class Demo58Application {
 
     @RequestMapping(value = "/h20")
     public String Demo58Controller11() {
-        return "Hello World! hyh 222";
+        return "Hello World! hyh 222-326";
         // localhost:8080/h20  ; 228 add, test firefox 只能取到return的 String结果
     }
 

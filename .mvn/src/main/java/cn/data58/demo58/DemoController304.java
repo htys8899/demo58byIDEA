@@ -4,6 +4,8 @@ package cn.data58.demo58;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Objects;
+
 @RestController
 public class DemoController304 {
 
@@ -18,7 +20,7 @@ public class DemoController304 {
         customer.setAddress(addr);
         customer.setHobby(hob);
         customerRepository.save(customer);
-        return "Added new customer to repo!";
+        return "Added new customer to repo! 20220326";
     }
 
     @GetMapping("/list")
@@ -29,6 +31,19 @@ public class DemoController304 {
     @GetMapping("/find/{id}")
     public Customer304 findCustomerById(@PathVariable Integer id) {
         return customerRepository.findCustomerById(id);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DemoController304 that = (DemoController304) o;
+        return Objects.equals(customerRepository, that.customerRepository);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(customerRepository);
     }
 }
 
